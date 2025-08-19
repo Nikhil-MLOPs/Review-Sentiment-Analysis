@@ -205,3 +205,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+# Project use case
+kiddu
+# Ignore only outer data folder
+/data/
+
+# But keep src/data
+!src/data/
+/models/

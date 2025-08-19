@@ -1,0 +1,9 @@
+numpy
+pandas
+ipykernel
+scikit-learn
+matplotlib
+dagshub
+nltk
+dvc
+flask
