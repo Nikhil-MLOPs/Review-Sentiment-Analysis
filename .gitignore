@@ -212,5 +212,5 @@ kiddu
 
 # But keep src/data
 !src/data/
-/models/
+
 local_s3
