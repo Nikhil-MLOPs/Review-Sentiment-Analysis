@@ -7,3 +7,4 @@ dagshub
 nltk
 dvc
 flask
+prometheus_client
