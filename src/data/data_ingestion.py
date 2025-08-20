@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 import yaml
 import logging
 from src.logger import logging
-# from src.connections import s3_connection
+from src.connections import s3_connection
 
 
 def load_params(params_path: str) -> dict:
