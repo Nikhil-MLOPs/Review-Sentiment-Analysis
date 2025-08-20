@@ -8,3 +8,4 @@ nltk
 dvc
 flask
 prometheus_client
+mlflow<3
