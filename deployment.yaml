@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flask-app
+  name: kiddu-proj
   labels:
-    app: flask-app
+    app: kiddu-proj
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: flask-app
+      app: kiddu-proj
   template:
     metadata:
       labels:
-        app: flask-app
+        app: kiddu-proj
     spec:
       containers:
-      - name: flask-app
-        image: 020866158197.dkr.ecr.us-east-1.amazonaws.com/flask-app:latest
+      - name: kiddu-proj
+        image: 020866158197.dkr.ecr.us-east-1.amazonaws.com/kiddu-proj:latest
         ports:
         - containerPort: 5000
         resources:
@@ -37,11 +37,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: flask-app-service
+  name: kiddu-proj-service
 spec:
   type: LoadBalancer
   selector:
-    app: flask-app
+    app: kiddu-proj
   ports:
     - name: http
       protocol: TCP
