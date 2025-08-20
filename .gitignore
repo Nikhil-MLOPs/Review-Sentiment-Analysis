@@ -214,3 +214,8 @@ kiddu
 !src/data/
 
 local_s3
+
+# Ignore all pickle model artifacts
+models/*.pkl
+models/*
+!.gitkeep
